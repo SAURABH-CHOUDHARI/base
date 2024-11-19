@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: clamp(12px, 1vw, 18px);
+}
+
+@font-face {
+    font-family: inm;
+    src: url(Inter-Medium.woff2);
+}
+
+@font-face {
+    font-family: inr;
+    src: url(Inter-Regular.woff2);
+}
+
+@font-face {
+    font-family: ini;
+    src: url(Inter-Italic.woff2);
+
+    @font-face {
+        font-family: span;
+        src: url(454eb5dae254a8dce752.otf);
+    }
+}
+
+.bg {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+        nav {
+            display: flex;
+            padding: 0 5vw;
+            padding-top: 5vh;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+
+            button {
+                font-family: inm;
+                padding: 1.5vh 1vw;
+                font-size: 0.8vw;
+                border: none;
+                background: #F5F5E7;
+                border-radius: 0.5vw;
+                &:hover { 
+                    background: black;
+                    color: #F5F5E7;
+                    cursor: pointer;
+                }
+            }
+        }
+    
+
+    .desktop {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+
+    .page1 {
+        // position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 2vw 2vw;
+
+        h1 {
+            font-size: 3vw;
+            color: white;
+            font-family: inr;
+            font-weight: 100;
+        }
+    }
+
+    .page2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        font-family: itr;
+        gap: 5vh;
+        padding: 10vh 0;
+
+        .up {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3vh;
+
+            h2 {
+                font-size: 1vw;
+                opacity: 0.6;
+            }
+
+            h1 {
+                font-size: 4vw;
+                font-family: iti;
+                padding: 0 20vw;
+                text-align: center;
+                font-weight: 100;
+            }
+
+            span {
+                font-size: 4vw;
+                font-family: Helvetica, sans-serif;
+                font-weight: 100;
+            }
+
+            h3 {
+                font-size: 1vw;
+                opacity: 0.8;
+                padding: 0 30vw;
+                text-align: center;
+                font-weight: 200;
+            }
+        }
+
+        img {
+            width: 90%;
+            border-radius: 2vw;
+        }
+
+        .bottom {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 5vw;
+
+            h1 {
+                font-size: 3vw;
+                padding: 0 20vw 0 0;
+            }
+            span {
+                font-size: 3vw;
+                font-family: Helvetica, sans-serif;
+                font-weight: 100;
+            }
+
+            p {
+                font-size: 1.5vw;
+                padding: 0 10vw 0 0;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    .bg {
+        nav {
+            padding: 1vh 5vw;
+
+            svg {
+                width: 20vw;
+            }
+
+            button {
+                padding: 0 1vw;
+                font-size: 3vw;
+            }
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    main {
+        height: 100vmin;
+        .page1 {
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+            h1 {
+                font-size: 5vw;
+            }
+        }
+        .page2{
+            padding: 5vh 0;
+            gap: 3vh;
+            .up{
+                gap:1vh;
+                h2{
+                    font-size: 1.5em;
+                }
+                h1{
+                    font-size: 3em;
+                    padding: 0 1em;
+                }
+                span{
+                    font-size: 0.8em;
+                }
+                h3{
+                    padding: 0 0.8em;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
