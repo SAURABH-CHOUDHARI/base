@@ -9,6 +9,8 @@ body {
   height: 100%;
   width: 100%;
   font-size: clamp(12px, 1vw, 18px);
+  display: flex;
+  justify-content: center;
 }
 
 @font-face {
@@ -31,6 +33,7 @@ body {
   height: 100vh;
   width: 100%;
   position: fixed;
+  max-width: 1920px;
 }
 .bg nav {
   display: flex;
@@ -42,11 +45,11 @@ body {
 }
 .bg nav button {
   font-family: inm;
-  padding: 1.5vh 1vw;
-  font-size: 0.8vw;
+  padding: 1em 2em;
+  font-size: 1em;
   border: none;
   background: #F5F5E7;
-  border-radius: 0.5vw;
+  border-radius: 0.5em;
 }
 .bg nav button:hover {
   background: black;
@@ -65,8 +68,9 @@ body {
 
 main {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
+  max-width: 1920px;
 }
 main .page1 {
   width: 100%;
@@ -130,6 +134,7 @@ main .page2 .bottom {
   width: 100%;
   justify-content: space-between;
   padding: 0 5vw;
+  font-family: itr;
 }
 main .page2 .bottom h1 {
   font-size: 3vw;
@@ -144,8 +149,168 @@ main .page2 .bottom p {
   font-size: 1.5vw;
   padding: 0 10vw 0 0;
 }
+main .page3 {
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5vw;
+  font-family: itr;
+}
+main .page3 .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 8rem;
+}
+main .page3 .container .part h6 {
+  color: #FF3B36;
+  position: relative;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+main .page3 .container .part h6:after {
+  position: absolute;
+  content: "1";
+  height: 0.3rem;
+  width: 0.3rem;
+  background: lightgray;
+  color: lightgray;
+  font-size: 0;
+  left: -1%;
+  top: 40%;
+}
+main .page3 .container .part h6:before {
+  position: absolute;
+  content: "1";
+  height: 0.3rem;
+  width: 0.3rem;
+  background: #FF3B36;
+  color: red;
+  font-size: 0;
+  left: -2%;
+  top: 40%;
+}
+main .page3 .container .part .imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+main .page3 .container .part .imgs img:nth-child(1) {
+  width: 1rem;
+  height: 1.5rem;
+  transform: rotateY(180deg);
+}
+main .page3 .container .part .imgs img:nth-child(2) {
+  width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 90%;
+}
+main .page3 .container .part .imgs img:nth-child(3) {
+  width: 1rem;
+  height: 1.5rem;
+}
+main .page3 .container .part h4 {
+  font-family: itm;
+  opacity: 0.6;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+main .page3 .container .part .base {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+main .page3 .container .part .base h1 {
+  font-size: 2em;
+  font-weight: 100;
+}
+main .page3 .container .part .base h5 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 0.7em;
+}
+main .page3 .container .part .base h5 sup {
+  color: #FF3B36;
+}
+main .page3 .container .part .cirlces {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+main .page3 .container .part .cirlces button {
+  background: black;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: double;
+  border-radius: 50%;
+  border-color: white;
+}
+main .page3 .container .part .cirlces button:nth-child(2) {
+  background: #F5F5E7;
+  border-color: #F5F5E7;
+}
+main .page3 .container .part .bb {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+main .page3 .container .part .bb .left {
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, sans-serif;
+  gap: 0.5rem;
+}
+main .page3 .container .part .bb .left h5 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+main .page3 .container .part .bb .left p {
+  font-size: 0.8rem;
+  width: 100%;
+}
+main .page3 .container .part .bb p {
+  font-size: 0.9rem;
+  width: 50%;
+  opacity: 0.6;
+}
+main .page3 .bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  width: 100%;
+  align-items: center;
+  margin-top: 20rem;
+  gap: 1rem;
+}
+main .page3 .bottom h1 {
+  font-family: itm;
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 500;
+  width: 40rem;
+}
+main .page3 .bottom button {
+  font-size: 1rem;
+  background: #FF3B36;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
 
 @media (max-width: 600px) {
+  .bg {
+    height: 100%;
+  }
   .bg nav {
     padding: 1vh 5vw;
   }
@@ -166,7 +331,7 @@ main .page2 .bottom p {
     width: 100%;
   }
   main {
-    height: 100vmin;
+    height: 130vmin;
   }
   main .page1 {
     justify-content: center;
@@ -196,5 +361,63 @@ main .page2 .bottom p {
   main .page2 .up h3 {
     padding: 0 0.8em;
     font-size: 1.5em;
+  }
+  main .page2 .bottom {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .page2 .bottom h1 {
+    font-size: 1.5rem;
+    width: 40%;
+    padding: 0;
+  }
+  main .page2 .bottom p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  main .page3 .container {
+    flex-direction: column;
+    gap: 2vh;
+  }
+  main .page3 .container .part h6 {
+    display: none;
+  }
+  main .page3 .container .part .imgs img:nth-child(1) {
+    display: none;
+  }
+  main .page3 .container .part .imgs img:nth-child(2) {
+    width: 100%;
+    height: 100%;
+  }
+  main .page3 .container .part .imgs img:nth-child(3) {
+    display: none;
+  }
+  main .page3 .container .part h4 {
+    font-size: 1rem;
+  }
+  main .page3 .container .part .cirlces button {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  main .page3 .container .part .bb {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .page3 .container .part .bb .left h5 {
+    font-size: 1.5rem;
+  }
+  main .page3 .container .part .bb .left p {
+    font-size: 1rem;
+  }
+  main .page3 .container .part .bb p {
+    font-size: 1rem;
+  }
+  main .page3 .bottom {
+    margin-top: 0;
+    justify-content: center;
+  }
+  main .page3 .bottom h1 {
+    font-size: 2.5rem;
+    width: 25rem;
   }
 }/*# sourceMappingURL=style.css.map */
