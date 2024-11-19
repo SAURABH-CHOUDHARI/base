@@ -8,7 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: clamp(12px, 1vw, 18px);
+  font-size: clamp(10px, 1vw, 18px);
   display: flex;
   justify-content: center;
 }
@@ -344,6 +344,235 @@ main .page4 .content .buttons button {
   padding: 0.4rem 0.5rem;
   border-radius: 5px;
 }
+main .page5 {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 5vw;
+}
+main .page5 .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: inr;
+  gap: 2rem;
+}
+main .page5 .top h6 {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+main .page5 .top h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  width: 60%;
+}
+main .page5 .top p {
+  opacity: 0.7;
+  font-size: 1.4rem;
+  width: 50%;
+  text-align: center;
+}
+main .page5 .middle {
+  padding: 5rem 0 1rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+main .page5 .middle .left {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+}
+main .page5 .middle .left .one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0.5rem;
+  padding: 4rem 5rem;
+}
+main .page5 .middle .right {
+  width: 100%;
+}
+main .page5 .middle .right img {
+  border-radius: 0.5rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page5 .bottom {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 0.5rem;
+}
+main .page5 .bottom img {
+  width: 3rem;
+  border-radius: 0.5rem;
+}
+main .page6 {
+  height: 100vh;
+  background-color: crimson;
+  width: 100%;
+  font-family: inm;
+  font-weight: 100;
+  background-image: url(Kitchen-Stripped-Down-2048x1280.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  background-size: 100% 100%;
+}
+main .page6 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+main .page6 .content h1 {
+  padding: 2rem 5rem;
+  font-size: 2.5rem;
+  color: #F5F5E7;
+}
+main .page6 .content .buttons {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 0.5rem;
+}
+main .page6 .content .buttons button {
+  background: black;
+  opacity: 0.6;
+  color: #F5F5E7;
+  border: none;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+}
+main .page7 {
+  width: 100%;
+  background: #F5F5E7;
+  display: flex;
+  padding: 2vh 5vw;
+  font-family: inr;
+  flex-direction: column;
+}
+main .page7 .custom {
+  width: 100%;
+}
+main .page7 .custom p {
+  width: 30rem;
+  opacity: 0.6;
+}
+main .page7 .top {
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+main .page7 .top h3 {
+  text-align: center;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+main .page7 .top h1 {
+  font-size: 3rem;
+  text-align: center;
+  width: 60rem;
+  font-weight: 300;
+}
+main .page7 .top h1 span {
+  font-family: iti;
+  font-weight: 200;
+}
+main .page7 .top p {
+  opacity: 0.8;
+  font-size: 1rem;
+  text-align: center;
+  width: 37rem;
+}
+main .page7 .one {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 1rem;
+}
+main .page7 .one span {
+  color: red;
+  font-size: 0.7rem;
+}
+main .page7 .slides {
+  display: flex;
+  padding-bottom: 3rem;
+  justify-content: space-between;
+}
+main .page7 .slides .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20rem;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+main .page7 .slides .card h1 {
+  font-size: 1.7rem;
+  font-family: ini;
+  font-weight: 100;
+}
+main .page7 .slides .card img {
+  width: 100%;
+}
+main .page7 .slides .card h2 {
+  font-size: 1rem;
+  color: #FF3B36;
+  font-weight: 100;
+}
+main .page7 .slides .card p {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+main .page8 {
+  height: 100vh;
+  background-color: crimson;
+  width: 100%;
+  font-family: inm;
+  font-weight: 100;
+  background-image: url(Kitchen-Stripped-Down-2048x1280.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  background-size: 100% 100%;
+}
+main .page8 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+main .page8 .content h1 {
+  padding: 2rem 5rem;
+  font-size: 2.5rem;
+  color: #F5F5E7;
+}
+main .page8 .content .buttons {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 0.5rem;
+}
+main .page8 .content .buttons button {
+  background: black;
+  opacity: 0.6;
+  color: #F5F5E7;
+  border: none;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
+}
 
 @media (max-width: 600px) {
   .bg {
@@ -477,6 +706,19 @@ main .page4 .content .buttons button {
     background: white;
   }
   main .page4 .content .buttons {
+    justify-content: flex-start;
+    padding: 2rem 2rem;
+  }
+  main .page6 {
+    height: 40vh;
+  }
+  main .page6 .content h1 {
+    padding: 1rem 2rem;
+    color: black;
+    font-size: 1.5rem;
+    background: white;
+  }
+  main .page6 .content .buttons {
     justify-content: flex-start;
     padding: 2rem 2rem;
   }
