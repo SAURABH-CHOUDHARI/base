@@ -232,8 +232,8 @@ main .page3 .container .part .base h1 {
 }
 main .page3 .container .part .base h5 {
   font-family: Helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 0.7em;
+  font-weight: 500;
+  font-size: 1em;
 }
 main .page3 .container .part .base h5 sup {
   color: #FF3B36;
@@ -305,6 +305,44 @@ main .page3 .bottom button {
   border: none;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
+}
+main .page4 {
+  height: 100vh;
+  background-color: crimson;
+  width: 100%;
+  font-family: inm;
+  font-weight: 100;
+  background-image: url(BASE_salon01-version2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  background-size: 100% 100%;
+}
+main .page4 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+main .page4 .content h1 {
+  padding: 2rem 5rem;
+  font-size: 2.5rem;
+  color: #F5F5E7;
+}
+main .page4 .content .buttons {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  gap: 0.5rem;
+}
+main .page4 .content .buttons button {
+  background: black;
+  opacity: 0.6;
+  color: #F5F5E7;
+  border: none;
+  padding: 0.4rem 0.5rem;
+  border-radius: 5px;
 }
 
 @media (max-width: 600px) {
@@ -395,6 +433,12 @@ main .page3 .bottom button {
   main .page3 .container .part h4 {
     font-size: 1rem;
   }
+  main .page3 .container .part .base h1 {
+    font-size: 2.5rem;
+  }
+  main .page3 .container .part .base h5 {
+    font-size: 1.5rem;
+  }
   main .page3 .container .part .cirlces button {
     height: 2.5rem;
     width: 2.5rem;
@@ -419,5 +463,21 @@ main .page3 .bottom button {
   main .page3 .bottom h1 {
     font-size: 2.5rem;
     width: 25rem;
+  }
+  main .page3 .bottom button {
+    font-size: 1.3rem;
+  }
+  main .page4 {
+    height: 40vh;
+  }
+  main .page4 .content h1 {
+    padding: 1rem 2rem;
+    color: black;
+    font-size: 1.5rem;
+    background: white;
+  }
+  main .page4 .content .buttons {
+    justify-content: flex-start;
+    padding: 2rem 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

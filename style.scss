@@ -251,8 +251,8 @@ main {
                     }
                     h5{
                         font-family: Helvetica, sans-serif;
-                        font-weight: 100;
-                        font-size: 0.7em;
+                        font-weight: 500;
+                        font-size: 1em;
                         sup{
                             color: #FF3B36;
                         }
@@ -329,6 +329,44 @@ main {
                 border: none;
                 padding: 1rem 2rem;
                 border-radius: 0.5rem;
+            }
+        }
+    }
+    .page4{
+        height: 100vh;
+        background-color: crimson;
+        width: 100%;
+        font-family: inm;
+        font-weight: 100;
+        background-image: url(BASE_salon01-version2.webp);
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-size: contain; 
+        background-size: 100% 100%; 
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            h1{
+                padding: 2rem 5rem;
+                font-size: 2.5rem;
+                color: #F5F5E7;
+            }
+            .buttons{
+                display: flex;
+                justify-content: center;
+                padding: 2rem 0;
+                gap: 0.5rem;
+                button{
+                    background: black ;
+                    opacity: 0.6;
+                    color: #F5F5E7;
+                    border: none;
+                    padding: 0.4rem 0.5rem;
+                    border-radius: 5px;
+                }
             }
         }
     }
@@ -433,6 +471,14 @@ main {
                     h4{
                         font-size: 1rem;
                     }
+                    .base{
+                        h1{
+                            font-size: 2.5rem;
+                        }
+                        h5{
+                            font-size: 1.5rem;
+                        }
+                    }
                     .cirlces{
                         button{
                             height: 2.5rem;
@@ -463,7 +509,28 @@ main {
                     font-size: 2.5rem;
                     width: 25rem;
                 }
+                button{
+                    font-size: 1.3rem;
+                }
             }
         }
-    }
+        .page4{
+            height: 40vh;
+
+            .content{
+                h1{
+                    padding: 1rem 2rem;
+                    color: black;
+                    font-size: 1.5rem;
+                    background: white;
+                }
+                .buttons{
+                    justify-content: flex-start;
+                    padding: 2rem 2rem;
+                }
+
+            }
+            }
+        }
+    
 }
