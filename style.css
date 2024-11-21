@@ -508,6 +508,7 @@ main .page7 .slides {
   display: flex;
   padding-bottom: 3rem;
   justify-content: space-between;
+  width: 100%;
 }
 main .page7 .slides .card {
   display: flex;
@@ -516,7 +517,7 @@ main .page7 .slides .card {
   width: 20rem;
   background: white;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
 }
 main .page7 .slides .card h1 {
   font-size: 1.7rem;
@@ -697,7 +698,7 @@ main .page8 .content .buttons button {
     font-size: 1.3rem;
   }
   main .page4 {
-    height: 40vh;
+    height: 100%;
   }
   main .page4 .content h1 {
     padding: 1rem 2rem;
@@ -709,8 +710,41 @@ main .page8 .content .buttons button {
     justify-content: flex-start;
     padding: 2rem 2rem;
   }
+  main .page5 {
+    padding: 5vh 3rem;
+  }
+  main .page5 .top h6 {
+    font-size: 1.5rem;
+  }
+  main .page5 .top h1 {
+    width: 100%;
+    font-size: 2rem;
+    font-family: inm;
+    font-weight: 300;
+    line-height: 1;
+  }
+  main .page5 .top p {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  main .page5 .middle {
+    flex-direction: column-reverse;
+  }
+  main .page5 .middle .left .one {
+    padding: 2rem 0;
+  }
+  main .page5 .middle .left .one h1 {
+    font-size: 2rem;
+  }
+  main .page5 .middle .left .one p {
+    font-family: 1.4rem;
+  }
+  main .page5 .bottom img {
+    height: 4rem;
+    width: 4rem;
+  }
   main .page6 {
-    height: 40vh;
+    height: 100%;
   }
   main .page6 .content h1 {
     padding: 1rem 2rem;
@@ -719,6 +753,72 @@ main .page8 .content .buttons button {
     background: white;
   }
   main .page6 .content .buttons {
+    justify-content: flex-start;
+    padding: 2rem 2rem;
+  }
+  main .page7 {
+    padding: 1vh 1rem;
+  }
+  main .page7 .custom {
+    font-size: 1.2rem;
+  }
+  main .page7 .custom p {
+    width: 35rem;
+  }
+  main .page7 .top {
+    padding-bottom: 4rem;
+  }
+  main .page7 .top h3 {
+    font-size: 1.5rem;
+  }
+  main .page7 .top h1 {
+    width: 90%;
+  }
+  main .page7 .top p {
+    font-size: 1.3rem;
+  }
+  main .page7 .one {
+    display: none;
+  }
+  main .page7 .slides {
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem;
+  }
+  main .page7 .slides .card {
+    width: 100%;
+    padding: 3rem 4rem 5rem 3rem;
+    gap: 3rem;
+  }
+  main .page7 .slides .card h1 {
+    font-size: 2rem;
+  }
+  main .page7 .slides .card h2 {
+    font-size: 1.5rem;
+  }
+  main .page7 .slides .card p {
+    font-size: 1.3rem;
+  }
+  main .page7 .slides .card:nth-child(2) {
+    display: none;
+  }
+  main .page7 .slides .card:nth-child(3) {
+    display: none;
+  }
+  main .page7 .slides .card:nth-child(4) {
+    display: none;
+  }
+  main .page8 {
+    height: 100%;
+  }
+  main .page8 .content h1 {
+    padding: 1rem 2rem;
+    color: black;
+    font-size: 1.5rem;
+    background: white;
+  }
+  main .page8 .content .buttons {
     justify-content: flex-start;
     padding: 2rem 2rem;
   }
